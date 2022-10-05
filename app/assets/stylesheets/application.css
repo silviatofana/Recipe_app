@@ -40,10 +40,7 @@
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 50%;
-  height: 40%;
   overflow: auto;
-
-  /* margin-top: 5vh; */
 }
 
 #customers td,
