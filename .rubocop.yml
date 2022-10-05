@@ -58,6 +58,9 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
+<<<<<<< HEAD
 Style/EndOfLine:
   EnforcedStyle: lf
   
+=======
+>>>>>>> 38ac739680ed8efea405d95ad9337f723384fb31
