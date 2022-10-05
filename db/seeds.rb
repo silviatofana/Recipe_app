@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+user1 = User.create(name: "ABDUL ALI")
+p "Created #{User.count} Users"
+
+food1  = Food.create(name: "Banana", measurement: "units", price: "$3", quantity: "10")
+p "Created #{Food.count} Foods"

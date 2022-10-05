@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipes App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "styles", "data-turbo-track": "reload" %>
+
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+
+  <div class="page-wrapper bg-red p-t-180 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Food Registration</h2>
+
+                    <%= form_with model: @food, method: :post do |form| %>
+
+                        <div class="input-group">
+                            <%= form.text_field :name, class: 'input--style-2', placeholder: 'Name' %>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <%= form.text_field :measurement, class: 'input--style-2 js-datepicker', placeholder: 'Measurement Unit' %>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <%= form.text_field :quantity, class: 'input--style-2 js-datepicker', placeholder: 'Quantity' %>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <%= form.text_field :price, class: 'input--style-2', placeholder: 'Price' %>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-t-30">
+                        <%= form.submit "Submit", class: 'btn btn--radius btn--green' %>
+                        </div>
+
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
