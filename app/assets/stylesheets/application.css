@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-@import "bootstrap";
-
-.all-recipe {
+@import "bootstrap" .all-recipe {
   display: flex;
   justify-content: center;
 }
@@ -40,7 +37,8 @@
   border: 2px black solid;
   color: #1014dd;
 }
-=======
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -56,7 +54,6 @@
  *= require_tree .
  *= require_self
  */
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
