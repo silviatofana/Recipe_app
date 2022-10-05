@@ -6,4 +6,3 @@ class Recipe < ActiveRecord::Base
   validates :name, presence: true
   validates :public, inclusion: { in: [true, false] }
 end
-
