@@ -1,35 +1,11 @@
-<<<<<<< HEAD
 <div class="container">
 <p style="color: green"><%= notice %></p>
 
 <h1>Foods</h1>
-
+  <div class= "add-food">
+<%= link_to "Add food", new_food_path %>
+</div>
 <%= render 'foods/food' %>
 
-<%= link_to "New food", new_food_path %>
-</div>
-=======
-<div class="food_container">
-  <table id="customers">
-    <tr>
-      <th>Food</th>
-      <th>Qunatity</th>
-      <th>Unit Price</th>
-      <th>Actions</th>
-    </tr>
 
-      <%# <% if can? :read, @food %>
-        <% @food.each_with_index do |food| %>
-          <tr>
-            <td><%= food.name %></td>
-            <td><%= food.quantity %> <%= food.measurement %></td>
-            <td><%= food.price %></td>
-            <td><%= button_to "Delete the Food", food_path(food.id), data: { confirm: "Are you sure?" }, method: :delete %></td>
-          </tr>
-        <% end  %>
-      <%# <% end %>
-  </table>
-  <button class="btn-hover color-1 font"><%= link_to 'Add Food', new_food_path , class: 'link' %></button>
 </div>
-
->>>>>>> 38ac739680ed8efea405d95ad9337f723384fb31
