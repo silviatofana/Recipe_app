@@ -1,28 +1,14 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
-  devise_for :users
-  resources :users
+  get 'shopping_list/show'
+  get 'recipe_foods/new'
   resources :foods
-  resources :recipes, only: %i[index show new create]
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  root 'home#index'
-  resources :recipes do
-    # resources :recipe_food, only: [:show, :new, :create, :edit, :update, :destroy]
-    member do
-      get :delete
-    end
+  devise_for :users
+  resources :recipes, only: %i[index show new create destroy put] do
+    resources :recipe_foods, path: 'food', only: %i[destroy new create]
   end
-end
-=======
-  root 'foods#index'
-  devise_for :users
-  # resources :users
-  resources :foods
 
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  match 'recipes/:recipe_id' => 'recipes#toogle_public', as: :toogle_public, via: :patch
+  match 'public_recipes' => 'recipes#public_recipes', as: :public_recipes, via: :get
 
-  # Defines the root path route ("/")
+  root 'recipes#public_recipes'
 end
->>>>>>> 38ac739680ed8efea405d95ad9337f723384fb31
