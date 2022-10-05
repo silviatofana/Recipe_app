@@ -110,6 +110,7 @@ GEM
     ffi (1.15.5)
     ffi (1.15.5-x64-mingw-ucrt)
     ffi (1.15.5-x64-mingw32)
+    ffi (1.15.5-x86-mingw32)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -153,6 +154,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.13.6-x64-mingw32)
       racc (~> 1.4)
+    nokogiri (1.13.6-x86-mingw32)
+      racc (~> 1.4)
     nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
@@ -162,6 +165,7 @@ GEM
     pg (1.4.0)
     pg (1.4.0-x64-mingw-ucrt)
     pg (1.4.0-x64-mingw32)
+    pg (1.4.0-x86-mingw32)
     popper_js (2.9.3)
     public_suffix (4.0.7)
     puma (5.6.4)
@@ -222,6 +226,8 @@ GEM
       ffi (~> 1.9)
     sassc (2.1.0-x64-mingw32)
       ffi (~> 1.9)
+    sassc (2.1.0-x86-mingw32)
+      ffi (~> 1.9)
     sassc (2.1.0-x86_64-linux)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -279,6 +285,7 @@ GEM
 PLATFORMS
   x64-mingw-ucrt
   x64-mingw32
+  x86-mingw32
   x86_64-linux
 
 DEPENDENCIES
