@@ -4,7 +4,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.1.2'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
-<<<<<<< HEAD
 
 gem 'devise'
 
@@ -14,14 +13,6 @@ gem 'bootstrap_form', '~> 5.0'
 gem 'sassc', '~> 2.1.0'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.3'
-=======
-# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-# gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
-
-gem 'rails', '~> 7.0.4'
->>>>>>> 38ac739680ed8efea405d95ad9337f723384fb31
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
@@ -92,12 +83,3 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
-<<<<<<< HEAD
-=======
-
-# rspec and controllers
-group :development, :test do
-  gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
-  gem 'rspec-rails'
-end
->>>>>>> 38ac739680ed8efea405d95ad9337f723384fb31
