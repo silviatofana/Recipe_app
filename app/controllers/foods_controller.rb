@@ -3,8 +3,7 @@ class FoodsController < ApplicationController
     @food = Food.all
   end
 
-  def show
-  end
+  def show; end
 
   def new
     @food = Food.new
@@ -25,12 +24,9 @@ class FoodsController < ApplicationController
     redirect_to foods_path
   end
 
-
-
   private
 
   def food_params
     params.require(:food).permit(:name, :measurement, :price, :quantity)
   end
 end
-

@@ -12,7 +12,8 @@
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
-  display: -ms-flexbox;
+
+  /* display: -ms-flexbox; */
   display: flex;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
@@ -42,6 +43,7 @@
 /* ==========================================================================
    #BOX-SIZING
    ========================================================================== */
+
 /**
  * More sensible default box-sizing:
  * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
@@ -58,8 +60,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
@@ -68,6 +70,7 @@ html {
 /* ==========================================================================
    #RESET
    ========================================================================== */
+
 /**
  * A very simple reset that sits on top of Normalize.css.
  */
@@ -115,6 +118,7 @@ table {
  */
 fieldset {
   min-width: 0;
+
   /* [1] */
   border: 0;
 }
@@ -276,10 +280,10 @@ input[type="date" i] {
 }
 
 .daterangepicker {
-  border: none;
-  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  /* border: none; */
+  -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
   display: none;
   border: 1px solid #e0e0e0;
   margin-top: 5px;
@@ -320,6 +324,7 @@ input {
 }
 
 /* input group 1 */
+
 /* end input group 1 */
 .input-group {
   position: relative;
@@ -353,21 +358,10 @@ input {
   color: #808080;
 }
 
-.input--style-2:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #808080;
-  opacity: 1;
-}
-
 .input--style-2::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #808080;
   opacity: 1;
-}
-
-.input--style-2:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #808080;
 }
 
 .input--style-2:-ms-input-placeholder {
@@ -408,7 +402,8 @@ input {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
-  display: -ms-flexbox;
+
+  /* display: -ms-flexbox; */
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -426,8 +421,8 @@ input {
   display: none;
 }
 
-.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow:after {
-  font-family: "Material-Design-Iconic-Font";
+.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow::after {
+  /* font-family: 'Material-Design-Iconic-Font'; */
   content: "\f2f9";
   font-size: 18px;
   color: #ccc;
@@ -446,13 +441,13 @@ input {
 }
 
 .select2-container--open .select2-dropdown--below {
-  border: none;
+  /* border: none; */
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
   border: 1px solid #e0e0e0;
   margin-top: 5px;
   overflow: hidden;
@@ -480,9 +475,9 @@ input {
 }
 
 .card-2 {
-  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -507,12 +502,14 @@ input {
   .card-2 {
     display: block;
   }
+
   .card-2 .card-heading {
     width: 100%;
     display: block;
     padding-top: 300px;
     background-position: left center;
   }
+
   .card-2 .card-body {
     display: block;
     padding: 60px 50px;
