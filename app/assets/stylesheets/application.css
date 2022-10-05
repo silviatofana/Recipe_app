@@ -1,15 +1,41 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import "bootstrap";
+
+.all-recipe {
+  display: flex;
+  justify-content: center;
+}
+
+.recipes-details {
+  margin-top: 15px;
+}
+
+.recipe-cards {
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.recipe-cards .left-info a {
+  color: #1014dd;
+  text-decoration: none;
+}
+
+.recipe-descr {
+  justify-content: left;
+}
+
+.right-info p {
+  flex-wrap: wrap;
+  text-align: left;
+  padding-top: 8px;
+}
+
+.new-recipes {
+  border: 2px black solid;
+  color: #1014dd;
+}
