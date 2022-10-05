@@ -1,0 +1,8 @@
+require 'test_helper'
+
+class ShoppingListControllerTest < ActionDispatch::IntegrationTest
+  test 'should get show' do
+    get shopping_list_show_url
+    assert_response :success
+  end
+end
