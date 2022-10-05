@@ -8,5 +8,5 @@
 user1 = User.create(name: "ABDUL ALI")
 p "Created #{User.count} Users"
 
-food1  = Food.create(name: "Banana", measurement: "units", price: "$3", quantity: "10")
+food1  = Food.create(name: "Banana", measurement: "units", price: "$3", quantity: "10", user_id: user1.id)
 p "Created #{Food.count} Foods"

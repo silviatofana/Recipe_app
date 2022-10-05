@@ -5,7 +5,7 @@ class CreateFoods < ActiveRecord::Migration[7.0]
       t.string :measurement, null: false
       t.integer :price, null: false
       t.integer :quantity, null: false
-      # t.references :user
+      t.references :user
 
       t.timestamps
     end
