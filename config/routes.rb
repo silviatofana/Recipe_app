@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   devise_for :users
   resources :users
   resources :foods
@@ -7,7 +6,7 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  root 'home#index'
+  root 'foods#index'
   resources :recipes do
     # resources :recipe_food, only: [:show, :new, :create, :edit, :update, :destroy]
     member do
@@ -15,14 +14,3 @@ Rails.application.routes.draw do
     end
   end
 end
-=======
-  root 'foods#index'
-  devise_for :users
-  # resources :users
-  resources :foods
-
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-end
->>>>>>> 38ac739680ed8efea405d95ad9337f723384fb31
