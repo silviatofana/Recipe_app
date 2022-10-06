@@ -21,12 +21,12 @@
   <div class="row">
     <div class="col col-md-6">
     <% if user_signed_in? %>
-        <%= link_to "Generate Shopping List", shopping_list_show_path(recipe_id:@recipe.id), method: :get, class: "btn btn-outline-dark" %>
+        <%= link_to "Generate Shopping List", shopping_list_path(@recipe.id), method: :get, class: "btn btn-outline-dark" %>
       <% end %>
     </div>
     <div class="col col-md-6 ms-auto">
       <% if @recipe.user == @current_user %>
-        <%= link_to "Add Ingredients", new_recipe_recipe_food_path(@recipe.id), class: "btn btn-outline-dark" %>
+        <%= link_to "Add Ingredients", new_recipe_path(@recipe.id), class: "btn btn-outline-dark" %>
       <% end %>
     </div>
       <table class="table">
@@ -40,6 +40,7 @@
             <% end %>
           </tr>
         </thead>
-        <tbody><%= render partial:"recipe_food", collection: @recipe_foods %>
+        <tbody>
+        <%# <%= render partial: 'partials/comment', locals: {post: post} %>
         </table>
 </div>

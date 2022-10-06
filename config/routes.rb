@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :users
   resources :foods
   resources :recipes, only: %i[index show new create]
+  resources :shopping_list, only: %i[show]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
