@@ -113,6 +113,7 @@ GEM
     execjs (2.8.1)
     ffi (1.15.5)
     ffi (1.15.5-x64-mingw-ucrt)
+    ffi (1.15.5-x86-mingw32)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -135,6 +136,7 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.8.0)
     minitest (5.16.1)
     msgpack (1.5.6)
     net-imap (0.2.3)
@@ -152,9 +154,10 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.6-x64-mingw-ucrt)
+    nokogiri (1.13.8)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    nokogiri (1.13.6-x86_64-linux)
+    nokogiri (1.13.8-x86-mingw32)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     parallel (1.22.1)
@@ -162,6 +165,7 @@ GEM
       ast (~> 2.4.1)
     pg (1.4.0)
     pg (1.4.0-x64-mingw-ucrt)
+    pg (1.4.0-x86-mingw32)
     popper_js (2.9.3)
     public_suffix (4.0.7)
     puma (5.6.4)
@@ -243,6 +247,8 @@ GEM
       ffi (~> 1.9)
     sassc (2.1.0-x64-mingw32)
       ffi (~> 1.9)
+    sassc (2.1.0-x86-mingw32)
+      ffi (~> 1.9)
     sassc (2.1.0-x86_64-linux)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -301,6 +307,7 @@ GEM
 PLATFORMS
   x64-mingw-ucrt
   x64-mingw32
+  x86-mingw32
   x86_64-linux
 
 DEPENDENCIES
@@ -313,6 +320,7 @@ DEPENDENCIES
   devise
   importmap-rails
   jbuilder
+  nokogiri (~> 1.13, >= 1.13.8)
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.3)
