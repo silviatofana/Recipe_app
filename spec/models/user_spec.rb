@@ -8,4 +8,11 @@ RSpec.describe User, type: :model do
       expect(assc.macro).to eq :has_many
     end
   end
+
+  # test validations.
+  describe 'validations' do
+    it 'is not valid without a name' do
+      expect(User.new).to_not be_valid
+    end
+  end
 end
