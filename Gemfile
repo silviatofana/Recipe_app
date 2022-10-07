@@ -5,6 +5,7 @@ ruby '3.1.2'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+gem 'bullet'
 gem 'devise'
 
 gem 'bootstrap', '~> 5.0'

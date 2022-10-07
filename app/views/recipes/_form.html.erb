@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="recipe-form">
+  <%= form_with(model: recipe) do |form| %>
+      <%= form.text_field :name, placeholder: 'Name' %>
+      <%= form.text_field :preparation_time, placeholder: 'Preparation Time' %>
+      <%= form.text_field :cooking_time, placeholder: 'Cooking time' %>
+      <%= form.text_area :description, placeholder: 'Description' %>
+      <p><%= form.check_box :public, {}, "true", "false"  %> Make this recipe public</p>
+  </div>
+    <% if recipe.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(recipe.errors.count, "error") %> prohibited this recipe from being saved:</h2>
+
+        <ul>
+          <% recipe.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
+  </div>
+</div>
