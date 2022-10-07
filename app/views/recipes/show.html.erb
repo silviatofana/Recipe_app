@@ -40,7 +40,6 @@
             <% end %>
           </tr>
         </thead>
-        <tbody>
-        <%# <%= render partial: 'partials/comment', locals: {post: post} %>
+        <tbody><%= render partial:"recipe_food", collection: @recipe_foods %>
         </table>
 </div>
