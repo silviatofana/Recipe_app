@@ -1,5 +1,18 @@
-#reciped {
-  margin-top: 20px;
+@import "bootstrap" .all-recipe {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.recipes-details {
+  margin-top: 15px;
 }
 
 .card-body {

@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+}
+
+.public_recipes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: tomato;
+  overflow: hidden;
+}
+
+.inner_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  overflow: auto;
+  direction: rtl;
+  background-color: white;
+  border-radius: 0 50% 50% 0;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 255, 0.2);
+  box-shadow: inset 0 0 20px 1em gold;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.inner_container::-webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  font-size: 5rem;
+  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 800;
+  font-style: oblique;
+  margin-bottom: 3rem;
+}
+
+.all_recipe_container {
+  /* margin-top: 9rem; */
+  flex-direction: column;
+  width: 90%;
+  height: 90%;
+  margin-left: 3rem;
+  direction: ltr;
+  display: flex;
+}
+
+.recipe_container {
+  display: flex;
+
+  /* border-radius: 0 50% 50% 0; */
+  box-shadow: 0 0 20px 20px rgba(0, 0, 255, 0.2);
+  border-radius: 0 50% 50% 0;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  width: 70%;
+  height: 10rem;
+}
+
+.owner_info {
+  justify-self: flex-start;
+  padding: 1rem;
+}
+
+.recipe_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: flex-end;
+  padding: 1rem;
+  text-align: center;
+}
+
+.recipe_info p {
+  margin: 0;
+  padding: 10px;
+}
