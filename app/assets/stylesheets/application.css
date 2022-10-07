@@ -55,6 +55,24 @@
 .recipe-form form {
   display: flex;
   justify-content: center;
+}
+
+.nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.recipes-details {
+  margin-top: 15px;
+}
+
+.recipe-cards {
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
   gap: 20px;
   flex-direction: column;
 }
