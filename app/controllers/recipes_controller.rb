@@ -80,8 +80,6 @@ class RecipesController < ApplicationController
     end
   end
 
-<<<<<<< HEAD
-=======
   def toogle_public
     @recipe = set_recipe
     @recipe.public = !@recipe.public
@@ -99,7 +97,6 @@ class RecipesController < ApplicationController
     @recipes = Recipe.where(public: true)
   end
 
->>>>>>> 3a3ce0d5a52d4d7a1b40739f8c5acf70ab434aaf
   def public_recipes
     @recipes = Recipe.where(public: true)
   end
