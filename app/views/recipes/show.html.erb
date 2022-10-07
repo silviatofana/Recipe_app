@@ -26,7 +26,7 @@
     </div>
     <div class="col col-md-6 ms-auto">
       <% if @recipe.user == @current_user %>
-        <%= link_to "Add Ingredients", new_recipe_path(@recipe.id), class: "btn btn-outline-dark" %>
+        <%= link_to "Add Ingredients", new_recipe_recipe_food_path(@recipe.id), class: "btn btn-outline-dark" %>
       <% end %>
     </div>
       <table class="table">

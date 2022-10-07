@@ -11,7 +11,7 @@
   <% @foods.each do |food| %>
     <tr>
       <th scope="row"><%= food.name %></th>
-      <td><%= food.measurement_unit %></td>
+      <td><%= food.measurement %></td>
       <td><%= food.price %></td>
       <td><%= button_to "Delete", food_path(food.id), method: :delete, class: "btn btn-outline-dark" %></td>
     </tr>
