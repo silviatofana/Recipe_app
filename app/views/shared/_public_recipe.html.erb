@@ -1,0 +1,16 @@
+<div class="card-public">
+  <div class="card-body2">
+    <h5 class="card-title"><%=  public_recipe.name %></h5>
+    <p class="card-text"> By: <%= public_recipe.user.name %> </p>
+    <%# <span class="badge bg-secondary">Public</span> %>
+    <%# <p class="card-text"> How to make: <%= public_recipe.description </p>%>
+  </div>
+  <div class= "card-paragr">
+    <p class="list-group-item">Total food items: 0</p>
+    <p class="list-group-item">Total food price: 0</p>
+  </div>
+
+</div>
+<div class="card-body">
+    <%= link_to public_recipe.name, recipe_path(public_recipe.id), class:'recipe-name'%>
+  </div>

@@ -1,0 +1,19 @@
+
+<div class="d-flex flex-column mb-2 align-items-center">
+<p style="color: green"><%= notice %></p>
+<div class="container">
+<h1 class="text-center">Recipes</h1>
+
+<div id="recipes" class="d-flex flex-column mb-2 align-items-center">
+<% if @recipes.empty? %>
+    <h2>You don't have any recipes.</h2>
+  <% else %>
+  <%= render 'recipes/recipe' %>
+  <% end %>
+</div>
+
+<% if user_signed_in? %>
+    <%= link_to "New Recipe", new_recipe_path%>
+  <% end %>
+</div>
+</div>

@@ -1,0 +1,78 @@
+@import "bootstrap";
+
+#reciped {
+  margin-top: 20px;
+}
+
+.nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.recipes-details {
+  margin-top: 15px;
+}
+
+.card-body {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.shoppin-list {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.food-total {
+  display: flex;
+  gap: 80px;
+}
+
+.add-food {
+  float: right;
+  margin-bottom: 20px;
+  border: 2px black solid;
+  background-color: #000;
+}
+
+.add-food a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card-public {
+  display: flex;
+  gap: 500px;
+  width: 50%;
+  height: 150px;
+  border: 2px black solid;
+}
+
+.recipe-name {
+  border: 2px black solid;
+  background-color: #000;
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.recipe-form form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.new-recipes {
+  text-align: center;
+}

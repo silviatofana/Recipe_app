@@ -1,0 +1,45 @@
+<h1 class="text-center"><%=  @recipe.name %>
+<% if @recipe.public %>
+    <span class="badge bg-secondary">Public</span>
+    <% else %>
+    <span class="badge bg-secondary">Private</span>
+    <% end %>
+</h1>
+<div class="card w-75 container">
+  <div class="card-body row align-items-between">
+    <div class="col col-md-6 ms-3">
+      <h4 class="fw-bold my-1">Preparation Time: <%= @recipe.preparation_time/60 %> hours <%= @recipe.preparation_time%60 %> minutes</h4>
+      <h4 class="fw-bold my-4">Cooking Time: <%= @recipe.cooking_time/60 %> hours <%= @recipe.cooking_time%60 %> minutes</h4>
+    </div>
+  </div>
+  <div class="row card-body">
+    <div class="card-body col col-md-12">
+      <h4 class="fw-bold my-1">Description</h4>
+      <p class="fs-6">
+        <%= @recipe.description %>
+  </div>
+  <div class="row">
+    <div class="col col-md-6">
+    <% if user_signed_in? %>
+        <%= link_to "Generate Shopping List", shopping_list_path(@recipe.id), method: :get, class: "btn btn-outline-dark" %>
+      <% end %>
+    </div>
+    <div class="col col-md-6 ms-auto">
+      <% if @recipe.user == @current_user %>
+        <%= link_to "Add Ingredients", new_recipe_recipe_food_path(@recipe.id), class: "btn btn-outline-dark" %>
+      <% end %>
+    </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Food</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Value</th>
+            <% if @recipe.user == current_user %>
+              <th scope="col">Action</th>
+            <% end %>
+          </tr>
+        </thead>
+        <tbody><%= render partial:"recipe_food", collection: @recipe_foods %>
+        </table>
+</div>
