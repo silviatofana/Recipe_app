@@ -75,7 +75,6 @@ rspec spec -f doc lib
 - GitHub: [@silviatofana](https://github.com/silviatofana/Recipe_app)
 - LinkedIn: [Silvia Tofana](https://www.linkedin.com/in/silviatofana/)
 
-
 👤 **ABDUL ALI**
 
 > * This is My **GitHub**: ![GitHub followers](https://img.shields.io/github/followers/ABDULALI3468?label=ABDULALI&style=social)
